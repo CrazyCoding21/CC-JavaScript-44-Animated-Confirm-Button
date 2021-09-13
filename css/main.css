@@ -1,0 +1,62 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+    background: linear-gradient(30deg, rgba(0, 229, 255, 1) 0%, rgba(0, 70, 150, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    transform: translateX(0px);
+    transition: all 2.5s;
+}
+.mast{
+    width: 12px;
+    height: 160px;
+    transform-origin: bottom;
+    transform: translate(170px, 48px) rotateZ(-90deg);
+    background-color: rgba(0, 70, 150, 1);
+    transition: all 1s;
+}
+.sail-1{
+    width: 0;
+    height: 0;
+    border-bottom: 145px solid #ffffff;
+    border-right: 60px solid transparent;
+    transform-origin: bottom;
+    transform: translateX(16px) scaleY(0.001);
+    transition: all 1s;
+}
+.sail-2{
+    width: 0;
+    height: 0;
+    border-bottom: 145px solid #ffffff;
+    border-left: 100px solid transparent;
+    transform-origin: bottom;
+    transform: translate(-104px, -145px) scaleY(0.001);
+    transition: all 1s;
+}
+#btn-confirm{
+    justify-self: center;
+    align-self: flex-end;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    background-color: rgba(0, 70, 150, 1);
+    z-index: 1;
+    transition: all 1s;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+}
+#btn-confirm:focus{
+    outline: none;
+}
